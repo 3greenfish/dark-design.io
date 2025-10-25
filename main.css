@@ -1,0 +1,149 @@
+p { 
+	color: #000000; 
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+/* test out button, replace with DIV later */
+
+.collapsible {
+	background-color: #eeeeee;
+	color: #444444;
+	cursor: pointer;
+	padding: 18px;
+	margin-top: 10px;
+	width: 250px;
+	border: 1px solid black;
+	text-align: left;
+	outline: none;
+	border-radius: 10px;
+	user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+
+.collapsible:hover {
+	background-color: #ccccdd;
+}
+
+.content {
+	padding: 5px 18px 5px 18px;
+	display: none;
+	overflow: hidden;
+	background-color: #f1f1f1;
+	width: 250px;
+	border-top: 1px dotted black;
+	border-bottom: 1px solid black;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	border-radius: 0 0 10px 10px;
+	max-height: 0;
+	transition: max-height 0.2s ease-out;
+}
+	
+
+.button {
+	border-radius: 25px;
+	border: 1px solid black;
+	background-color: #dddddd;
+	margin: 5px;
+	padding: 2px;
+}
+
+.resourceName, .resourceValue {
+	display: inline-block;
+}
+
+
+#devButtons {
+	border: 1px dashed red;
+	background-color: #ddddff;
+	color: black;
+}
+
+#devButtons p {
+	text-align: center;
+	font-weight: bold;
+	color: black;
+}
+
+#messagebox {
+	border: 1px solid green;
+	min-height: 1em;
+	padding: 5px;
+	
+}
+
+
+
+
+
+
+
+nav {
+	background color: black;
+	color: green;
+	border: 2px solid green;
+	min-width: 1300px;
+	/* display: none; */
+}
+
+#game {
+	position: absolute;
+	bottom: 0;
+	top: 35px;
+	width: 100%;
+	height: 90%;
+	min-width: 1300px;
+	margin: 1px 0px 0px 0px;
+	border: 1px dotted black;
+	height: auto;
+	/* white-space: nowrap; */
+}
+
+.column {
+	min-height: 80%;
+	height: 100%;
+	display: inline-block;
+	margin-top: 2px;
+	/* margin-left: 0px;
+	margin-right: 0px; */
+	overflow-x: hidden;
+	overflow-y: auto;
+	vertical-align: top;
+}
+
+#leftblock { 
+	width: 25%;
+	max-width: 400px;
+	min-width: 300px;
+	height: 100%;
+	background-color: white;
+	color: black;
+	border: 1px dotted blue;
+	margin-right: 10px;	
+	padding: 0px;
+}
+
+#midblock {
+	width: 630px;
+	border: 1px dotted red;
+	margin: 0px; /* T R B L */
+	padding: 0px 10px 10px 10px;
+}
+
+#rightblock {
+	max-width: 320px;
+	min-width: 240px;
+	border: 1px dotted red;
+	vertical-align: top;
+	position: relative;
+}	
+
+.panel {
+	display: none;
+}
+
+.panel.active {
+	display: block;
+}
