@@ -37,7 +37,7 @@ function postMessage(event, eventValue) {
 	if (sourceButton == "GatherFood") {
 		messageText = "You have gathered " + eventValue + " food. You now have " + foodValue + " food.";
 	} else {
-		messageText = "You did a thing??";
+		messageText = "You did a thing?? Wow.";
 	}
 	document.getElementById("messageCurrent").innerText = messageText;
 }
