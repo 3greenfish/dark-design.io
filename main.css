@@ -26,6 +26,10 @@ p {
 	background-color: #ccccdd;
 }
 
+.collapsible:focus {
+	background-color: #ccaadd;
+}
+
 .content {
 	padding: 5px 18px 5px 18px;
 	display: none;
@@ -81,7 +85,7 @@ p {
 
 
 nav {
-	background color: black;
+	background-color: black;
 	color: green;
 	border: 2px solid green;
 	min-width: 1300px;
