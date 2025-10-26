@@ -1,4 +1,5 @@
 let foodValue = 2;
+const MessageArray = [];
 
 function toggleActive(e) {
 	const targetPanelId = e.target.getAttribute('data-target');
@@ -41,6 +42,15 @@ function postMessage(event, eventValue) {
 	}
 	document.getElementById("messageCurrent").innerText = messageText;
 }
+
+function _PostMessage(messagetext) {
+	messageArray.unshift(messagetext);
+	if (messageArray.length > 5) {
+		messageArray.pop();
+	}
+}
+
+
 
 function buttonClick(event, amount) {
 	const sourceButton = event.target.getAttribute('data-target');
