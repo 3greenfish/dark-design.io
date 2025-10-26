@@ -22,8 +22,8 @@ p {
 	-ms-user-select: none;
 }
 
-.collapsible .actColl {
-	border-radius: 10px 10px 0 0;
+.actColl {
+	border-radius: 10px 10px 0 0 !important;
 	border-bottom: none;
 }
 
@@ -35,7 +35,7 @@ p {
 }
 
 .actColl::after {
-	content: "\2796";
+	content: "\2796" !important;
 }
 
 /* .collapsible:hover {
