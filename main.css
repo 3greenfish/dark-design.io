@@ -22,6 +22,12 @@ p {
 	-ms-user-select: none;
 }
 
+.collapsible:after{
+	content: "\2630\";
+	margin-left: 5px;
+	float: right;
+}
+
 .collapsible:hover {
 	background-color: #ccccdd;
 }
