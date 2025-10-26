@@ -22,8 +22,8 @@ p {
 	-ms-user-select: none;
 }
 
-.collapsible:after{
-	content: "\2630\";
+.collapsible:after {
+	content: "\2630";
 	margin-left: 5px;
 	float: right;
 }
@@ -143,6 +143,7 @@ nav {
 }
 
 #rightblock {
+	width: 100%;
 	max-width: 320px;
 	min-width: 240px;
 	border: 1px dotted red;
