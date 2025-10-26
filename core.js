@@ -47,7 +47,7 @@ function _PostMessage(messagetext) {
 	if (messageArray.length > 5) {
 		messageArray.pop();
 	}
-	document.getElementById("messagebox").innerText = messageArray;
+	document.getElementById("messagebox").innerText = messageArray.tostring();
 }
 
 
