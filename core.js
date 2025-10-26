@@ -8,7 +8,6 @@ function toggleActive(e) {
 		activePanels[0].classList.toggle('active'); /* hides everything */
 	} 
 	targetPanel.classList.toggle('active')
-	// wait 1 second then show selected panel
 }
 
 
@@ -20,13 +19,14 @@ function expandButton(butt) {
 /*		document.getElementById(buttonElement).style.borderBottom = "1px solid black"; *//* restore border */	
 /*		document.getElementById(buttonElement).style.borderRadius = "10px"; *//* restore rounded corners */	
 		targetContent.style.maxHeight = "0";
+		document.getElementById(buttonElement).classList.toggle("actColl");
 
 	} else {
 		targetContent.style.display = "block";
 		targetContent.style.maxHeight = targetContent.scrollHeight + "px";
-	/*	document.getElementById(buttonElement).classList.toggle("actColl");	*/
+		document.getElementById(buttonElement).classList.toggle("actColl");
 	}
-	document.getElementById(buttonElement).classList.toggle("actColl");	
+
 }
 
 function postMessage(event, eventValue) {
