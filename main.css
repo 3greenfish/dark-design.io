@@ -22,10 +22,20 @@ p {
 	-ms-user-select: none;
 }
 
-.collapsible:after {
+.collapsible .actColl {
+	border-radius: 10px 10px 0 0;
+	border-bottom: null;
+}
+
+
+.collapsible::after {
 	content: "\2630";
 	margin-left: 5px;
 	float: right;
+}
+
+.collapsible .actColl::after {
+	content: "\2796";
 }
 
 .collapsible:hover {
