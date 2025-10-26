@@ -1,4 +1,4 @@
-let foodValue = 2;
+let foodValue = 3;
 
 function toggleActive(e) {
 	const targetPanelId = e.target.getAttribute('data-target');
@@ -17,16 +17,16 @@ function expandButton(butt) {
 	const targetContent = document.getElementById(buttonElement + "Content");
 	if (targetContent.style.display == "block") {
 		targetContent.style.display = "none"; /* hide content DIV */
-		document.getElementById(buttonElement).style.borderBottom = "1px solid black"; /* restore border */	
-		document.getElementById(buttonElement).style.borderRadius = "10px"; /* restore rounded corners */	
+/*		document.getElementById(buttonElement).style.borderBottom = "1px solid black"; *//* restore border */	
+/*		document.getElementById(buttonElement).style.borderRadius = "10px"; *//* restore rounded corners */	
 		targetContent.style.maxHeight = "0";
 
 	} else {
 		targetContent.style.display = "block";
 		targetContent.style.maxHeight = targetContent.scrollHeight + "px";
-		document.getElementById(buttonElement).style.borderBottom = "none";
-		document.getElementById(buttonElement).style.borderRadius = "10px 10px 0 0";	
+	/*	document.getElementById(buttonElement).classList.toggle("actColl");	*/
 	}
+	document.getElementById(buttonElement).classList.toggle("actColl");	
 }
 
 function postMessage(event, eventValue) {
