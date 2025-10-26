@@ -9,7 +9,6 @@ function toggleActive(e) {
 		activePanels[0].classList.toggle('active'); /* hides everything */
 	} 
 	targetPanel.classList.toggle('active')
-	// wait 1 second then show selected panel
 }
 
 
@@ -48,6 +47,7 @@ function _PostMessage(messagetext) {
 	if (messageArray.length > 5) {
 		messageArray.pop();
 	}
+	document.getElementById("messagebox").innerText = messageArray;
 }
 
 
