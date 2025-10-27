@@ -2,9 +2,6 @@ let foodValue = 2;
 const messageArray = ["one", "two", "three"];
 let testText = messageArray.toString();
 
-
-
-
 let jsUpdateTime = "10-26 653pm";
 
 function updateJStime() {
@@ -51,7 +48,8 @@ function postMessage(event, eventValue) {
 	} else {
 		messageText = "You did a thing?? Wow.";
 	}
-	document.getElementById("messageCurrent").innerText = messageText;
+	messageText = "from old postmessage:" + messageText;
+	_PostMessage(messageText);
 }
 
 function _PostMessage(messagetext) {
