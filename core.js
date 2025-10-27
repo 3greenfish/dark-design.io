@@ -1,6 +1,6 @@
 let foodValue = 2;
 const messageArray = ["one", "two", "three"];
-let testText = messageArray[0];
+let testText = messageArray.toString();
 
 window.alert(testText);
 
