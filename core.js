@@ -7,8 +7,9 @@ let testText = messageArray.toString();
 
 let jsUpdateTime = "10-26 523pm";
 
-document.getElementbyId('jsVersion').innerText=jsUpdatetime;
-
+function updateJStime() {
+	document.getElementbyId('jsVersion').innerText=jsUpdatetime;
+}
 
 
 function toggleActive(e) {
