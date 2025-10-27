@@ -1,6 +1,8 @@
 let foodValue = 2;
-const messageArray = [ "one","two","three" ];
-window.alert(messageArray.toString);
+const messageArray = ["one", "two", "three"];
+let testText = messageArray.toString();
+
+window.alert(testText);
 
 
 function toggleActive(e) {
