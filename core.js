@@ -8,7 +8,7 @@ let testText = messageArray.toString();
 let jsUpdateTime = "10-26 523pm";
 
 function updateJStime() {
-	document.getElementbyId('jsVersion').innerText=jsUpdatetime;
+	document.getElementbyId('jsVersion').innerText = jsUpdateTime;
 }
 
 
