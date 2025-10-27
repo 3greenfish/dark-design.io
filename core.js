@@ -5,6 +5,12 @@ let testText = messageArray.toString();
 window.alert(testText);
 
 
+let jsUpdateTime = "10-26 523pm";
+
+document.getElementbyId('jsVersion').innerText=jsUpdatetime;
+
+
+
 function toggleActive(e) {
 	const targetPanelId = e.target.getAttribute('data-target');
 	const targetPanel = document.getElementById(targetPanelId);
