@@ -2,13 +2,14 @@ let foodValue = 2;
 const messageArray = ["one", "two", "three"];
 let testText = messageArray.toString();
 
-/* window.alert(testText); */
+
 
 
 let jsUpdateTime = "10-26 523pm";
 
 function updateJStime() {
 	document.getElementById('jsVersion').innerText = jsUpdateTime;
+	document.getElementById('messageCurrent').innerText = testText;
 }
 
 
