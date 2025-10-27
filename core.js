@@ -1,5 +1,7 @@
 let foodValue = 2;
-const messageArray = [];
+const messageArray = [ "one","two","three" ];
+window.alert(messageArray.toString);
+
 
 function toggleActive(e) {
 	const targetPanelId = e.target.getAttribute('data-target');
