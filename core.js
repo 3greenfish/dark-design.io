@@ -5,7 +5,7 @@ let testText = messageArray.toString();
 
 
 
-let jsUpdateTime = "10-26 604pm";
+let jsUpdateTime = "10-26 653pm";
 
 function updateJStime() {
 	document.getElementById('jsVersion').innerText = jsUpdateTime;
@@ -59,8 +59,11 @@ function _PostMessage(messagetext) {
 	if (messageArray.length > 5) {
 		messageArray.pop();
 	}
-	let finalArray = "<p>" + messageArray.toString() + "</p>";
-	document.getElementById("messagebox").innerText = finalArray;
+	let finalArray = "";
+	for (let i = 0; i < messageArray.length; i++) {
+		finalArray += "<p>" + messageArray[i] + "</p>";
+	}
+	document.getElementById("messagebox").innerHTML = finalArray;
 }
 
 
